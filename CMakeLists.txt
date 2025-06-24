@@ -13,4 +13,5 @@ add_executable(main
     src/main.cpp 
     src/hash.cpp
     src/unit_test.cpp
+    src/linklist_stack.cpp
 )
