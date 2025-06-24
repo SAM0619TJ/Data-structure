@@ -20,10 +20,16 @@ public:
     void remove(int key);
     std::vector<int> keySet();
     std::vector<std::string> valSet();
-    std::vector<Pair *> Pairset();
+    std::vector<Pair *>Pairset();
+    void extend();
     void printHash();
+    double loadfactor();
 private:
-    std::vector<Pair *> buckets;
+    std::vector<std::vector<Pair *>> buckets;
+    int size;
+    int capacity;
+    double loadThres;
+    int extendRatio;
 };
 
 #endif // HASH_H
